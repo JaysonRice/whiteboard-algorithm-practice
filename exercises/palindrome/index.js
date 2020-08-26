@@ -7,6 +7,27 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+
+// My solution using same logic from reverse string
+
+function palindrome(str) {
+    let reversed = '';
+
+    for (const character of str) {
+        reversed = character + reversed;
+    }
+    // Returns truthy or falsy depending if they match
+    return reversed === str;
+}
+
+// Solution that uses the every helper to compare every character to the character on the opposite side
+// i is the index of the character we are iterating over
+
+// function palindrome(str) {
+//     return str.split('').every((char, i) => {
+//         return char === str[str.length - i - 1]
+//     })
+// }
+
 
 module.exports = palindrome;
