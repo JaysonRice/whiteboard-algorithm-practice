@@ -12,6 +12,40 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
 
+// My solution
+// function fizzBuzz(n) {
+
+//     for (let i = 1; i <= n; i++) {
+
+//         if (i % 3 === 0 && i % 5 !== 0) {
+//             console.log('fizz')
+//         } else if (i % 5 === 0 && i % 3 !== 0) {
+//             console.log('buzz')
+//         } else if (i % 3 === 0 && i % 5 === 0) {
+//             console.log('fizzbuzz')
+//         } else {
+//             console.log(i)
+//         }
+//     }
+// }
+
+// Video solution, less logic in the if else block if you check for fizzbuzz first. 
+function fizzBuzz(n) {
+
+    for (let i = 1; i <= n; i++) {
+
+        if (i % 15 === 0) {
+            console.log('fizzbuzz')
+        } else if (i % 3 === 0) {
+            console.log('fizz')
+        } else if (i % 5 === 0) {
+            console.log('buzz')
+        } else {
+            console.log(i)
+        }
+    }
+}
+
+// export default fizzBuzz
 module.exports = fizzBuzz;

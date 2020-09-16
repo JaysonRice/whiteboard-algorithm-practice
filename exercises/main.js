@@ -1,4 +1,6 @@
 
-import maxChar from "./maxchar/index.js";
+// import fizzBuzz from "./fizzbuzz/index.js";
+// import maxChar from "./maxchar/index.js";
 
-maxChar('Check this string please.')
+// fizzBuzz(30)
+// console.log(maxChar('Check this string please.'))
